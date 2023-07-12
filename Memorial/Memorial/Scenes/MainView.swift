@@ -28,11 +28,11 @@ struct dumView: View {
 struct MainView: View {
     var dumList:[Dummy] = [
         Dummy(imageName:"Sewol", text:"세월호 참사 이후"),
-        Dummy(imageName:"Sewol", text:"기억 합니다."),
-        Dummy(imageName:"Sewol", text:"🎗️고인의 명복을 빕니다."),
-        Dummy(imageName:"Sewol", text:"그 날의 참사."),
-        Dummy(imageName:"Sewol", text:"아직도 그립습니다."),
-        Dummy(imageName:"Sewol", text:"거긴 편안하신가요?"),
+        Dummy(imageName:"Daegu", text:"기억 합니다."),
+        Dummy(imageName:"Riborn", text:"🎗️고인의 명복을 빕니다."),
+        Dummy(imageName:"Sampong", text:"그 날의 참사."),
+        Dummy(imageName:"Shae", text:"서해 훼리호 침몰 사고."),
+        Dummy(imageName:"Daehan", text:"거긴 편안하신가요?"),
     ]
     var body: some View {
         

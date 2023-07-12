@@ -6,11 +6,27 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct loginView: View {
     
     @State var writeid = ""
     @State var writepw = ""
+    
+    func sendRegister() {
+        debugPrint(writepw)
+        let url="http://172.20.10.3:8081"
+//        param(member_id: writeid, name: writenm, passwd: writepw)
+        
+        let param = [
+            "member_id": writeid,
+            "passwd": writepw
+        ] as [String : Any]
+        AF.request(url + "/members/login", method: .post, parameters: param, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+            }
+    }
     
     var body: some View {
         NavigationView() {
